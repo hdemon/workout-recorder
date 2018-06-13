@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {startClock, serverRenderClock} from '../store'
-import Examples from '../components/examples'
+import Main from '../components/main'
 
 class Index extends React.Component {
   static getInitialProps ({ reduxStore, req }) {
@@ -22,7 +22,7 @@ class Index extends React.Component {
 
   render () {
     return (
-      <Examples />
+      <Main />
     )
   }
 }

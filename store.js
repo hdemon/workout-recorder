@@ -5,7 +5,31 @@ import thunkMiddleware from 'redux-thunk'
 const exampleInitialState = {
   lastUpdate: 0,
   light: false,
-  count: 0
+  count: 0,
+  exerciseList: [
+    {
+      type: "exercise",
+      data: {
+        name: "Bench Press",
+        weight: 30,
+        reps: 8,
+      }
+    },
+    {
+      type: "exercise",
+      data: {
+        name: "Bench Press",
+        weight: 30,
+        reps: 8,
+      }
+    },
+    {
+      type: "interval",
+      data: {
+        seconds: 60 * 2
+      }
+    },
+  ]
 }
 
 export const actionTypes = {
