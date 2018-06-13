@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {startClock, serverRenderClock} from '../store'
+import Layout from '../components/layout'
 import Main from '../components/main'
 
 class Index extends React.Component {
@@ -22,7 +23,9 @@ class Index extends React.Component {
 
   render () {
     return (
-      <Main />
+      <Layout>
+        <Main />
+      </Layout>
     )
   }
 }
