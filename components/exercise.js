@@ -16,11 +16,27 @@ const Name = styled.div`
     color: #eee;
 `
 
+const Weight = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #eee;
+`
+
+const Reps = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #eee;
+`
+
 const Exercise = ({ name, weight, reps }) =>
     <Wrapper>
         <Name>{name}</Name>
-        <div>{weight}</div>
-        <div>{reps}</div>
+        <Weight>{weight}</Weight>
+        <Reps>{reps}</Reps>
     </Wrapper>
 
 export default Exercise
